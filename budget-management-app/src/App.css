@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+#main {
+    font-family: 'Poppins', sans-serif;
+}
+
+.balance {
+    font-size: 32px;
+}
+
+.income {
+    color: #37d43c;
+    font-size: 25px;
+}
+
+.expense {
+    color: #e02116;
+    font-size: 25px;
+}
+
+#transactions_container {
+    margin-top: 80px;
+}
+
+.transactions_list li {
+    background-color: white;
+    box-shadow: var(--box-shadow);
+    border: 1px solid gray;
+    color: #333;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px 0px;
+}
+
+@media only screen and (max-width:600px){
+    .transactions_list li {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:400px){
+    .transactions_list li {
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width:1900px){
+    .transactions_list li {
+        width: 90%;
+    }
+}
+
+.transactions_list li.negative {
+    background-color: #e07f79cb ;
+    border-left: 6px solid #e02116;
+}
+
+.transactions_list li.positive {
+    background-color: #a6d4a8 ;
+    border-left: 6px solid #37d43c;
+}
+
+.delete_btn {
+    border: none;
+    background-color: rgb(172, 39, 172);
+    border-radius: 4px;
+    color: white;
+    font-size: 18px;
+    height: 60px;
+    cursor: pointer;
+    width: 100px;
+}
+
+.delete_btn:hover{
+    background-color: rgb(128, 27, 128) ;
+}
+
+@media only screen and (max-width:600px){
+   .delete_btn {
+       padding: 2px 5px;
+   }
+}
+
+.add_container {
+    margin-top: 50px;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+}
+  
+  input[type='text'],
+  input[type='number'] {
+    border: 1px solid #dedede;
+    border-radius: 2px;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+}
+
+#transaction {
+    width: 200px; 
+    padding: 3px 0px;
+    border: 1px solid gray;
+}
+
+.add_btn {
+    margin-top: 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(172, 39, 172);
+    color: white;
+    font-size: 18px;
+    padding: 8px 0px;
+    cursor: pointer;
+    width: 150px;
+}
+
+.add_btn:hover{
+    background-color: rgb(128, 27, 128) ;
+}
